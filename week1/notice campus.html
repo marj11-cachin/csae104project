@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Campus Notices</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        :root {
+            --brand: #1f7a5c;
+            --space: 1rem;
+        }
+        .btn {
+            background: var(--brand);
+            padding: var(--space);
+        }
+    </style>
+</head>
+<body style="background-color: rgb(243, 227, 229);">
+    <header style="color: violet;">
+        <nav>
+            <a href="Home.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="style3">
+        <section>
+            <h1>Campus Notices</h1>
+            <h2>Campus Notices</h2>
+            <h3>Campus Notices</h3>
+
+            <img src="bird.jpg" alt="bird" />
+
+            <ul>
+                <li>Animal</li>
+                <li>Bird</li>
+                <li>Dog</li>
+                <li>Cat</li>
+            </ul>
+
+            <ol>
+                <li>Animal</li>
+                <li>Bird</li>
+                <li>Dog</li>
+                <li>Cat</li>
+            </ol>
+
+            <a href="notices.html">Read Notices</a>
+
+            <form action="/api/notices" method="post">
+                <label for="title">Title</label>
+                <input id="title" name="title" type="text" required />
+
+                <label for="msg">Message</label>
+                <textarea id="msg" name="message"></textarea>
+
+                <button type="submit" class="btn">Post notice</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>College Computer Science</footer>
+</body>
+</html>
