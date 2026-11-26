@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Campus Notices</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>Campus Notices</h1>
+
+<form action="/search" method="get">
+  <label for="q">Search notices</label>
+  <input id="q" name="q" type="search" required>
+  <select name="category">
+    <option value="academic">Academic</option>
+    <option value="events">Events</option>
+  </select>
+  <button type="submit">Search</button>
+</form>
+
+    <h2>Library hours extended</h2>
+<img src="images/library.jpg" alt="Students studying at long tables in the library" width="600" height="400">
+<p>See the <a href="notices/library.html">full library notice</a> or visit
+   <a href="https://www.dmmmsu.edu.ph" target="_blank" rel="noopener">the university website</a>.</p>
+
+   <ul>
+  <li>Bring your student ID</li>
+  <li>Arrive 15 minutes early</li>
+</ul>
+
+<table>
+  <caption>Enrolment schedule</caption>
+  <thead>
+    <tr><th scope="col">Year level</th><th scope="col">Date</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1st year</td><td>12 January</td></tr>
+    <tr><td>2nd year</td><td>13 January</td></tr>
+  </tbody>
+</table>
+
+<article class="notice">
+  <h2>Library hours extended</h2>
+  <p>The library stays open until 9 PM during midterm week.</p>
+</article>
+
+<div class="notice">
+  <h3>Enrolment opens</h3>
+  <img src="enrol.png">
+  <p>Click <a href="enrol.html">here</a> to read more.
+  <b>Posted by</b> Registrar
+  <input type="text" placeholder="Your email">
+</div>
+  </body>
+</html>
