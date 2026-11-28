@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1">
+  <title>MyApp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="themeToggle" class="theme">Dark</button>
+  
+  <section id="splash" class="screen">
+    <h1 class="logo">MyApp</h1>
+    <div class="loader"></div>
+  </section>
+
+  <section id="register" class="screen hidden">
+  <form id="regForm" class="card">
+    <h2>Create account</h2>
+    <input name="name" placeholder="Name" required>
+    <input name="email" type="email"
+      placeholder="Email" required>
+    <input name="password" type="password"
+      placeholder="Password" required>
+    <input name="confirm" type="password"
+      placeholder="Confirm password" required>
+    <button>Register</button>
+    <p id="regMsg" class="message"></p>
+    <a href="#" id="toLogin">I have an account</a>
+  </form>
+</section>
+
+<section id="login" class="screen hidden">
+  <form id="logForm" class="card">
+    <h2>Log in</h2>
+    <input name="email" type="email"
+      placeholder="Email">
+    <input name="password" type="password"
+      placeholder="Password">
+    <button>Log in</button>
+    <p id="logMsg" class="message"></p>
+    <a href="#" id="toRegister">Create an account</a>
+  </form>
+</section>
+
+<section id="welcome" class="screen hidden">
+  <h2 id="welcomeText"></h2>
+  <button id="logout">Log out</button>
+</section>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
